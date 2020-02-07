@@ -8,5 +8,6 @@ public class main {
         System.out.println(list);
         LinearSearch search = new LinearSearch();
         System.out.println(search.linearSearch(list, "spurter"));
+        System.out.println(search.linearSearch(list, "qwhjfhb"));
     }
 }

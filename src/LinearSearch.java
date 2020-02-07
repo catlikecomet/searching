@@ -8,6 +8,6 @@ public class LinearSearch {
                 return word;
             }
         }
-        return "word not in list";
+        return word + " is not in the list";
     }
 }
