@@ -12,10 +12,12 @@ public class BinarySearch {
 
             if (list.get(middleOfList).equals(word)) {
                 return word;
-            } else if (list.indexOf(word) < list.indexOf(middleOfList)) {
+            } else if (list.get(middleOfList).compareTo(word) < 0) {
+                firstIndex = middleOfList + 1;
+            } else if (list.get(middleOfList).compareTo(word) > 0){
                 lastIndex = middleOfList - 1;
             } else {
-                firstIndex = middleOfList + 1;
+                return word;
             }
         }
             return word + " is not in the list";
