@@ -8,7 +8,7 @@ public class BinarySearch {
         int lastIndex = list.size() - 1;
 
         while (firstIndex <= lastIndex) {
-            int middleOfList = lastIndex + firstIndex / 2;
+            int middleOfList = (lastIndex + firstIndex) / 2;
 
             if (list.get(middleOfList).equals(word)) {
                 return word;
